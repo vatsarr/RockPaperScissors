@@ -72,20 +72,20 @@ function getResult() {
         case "paperrock":
             playerScore++;
             resultDisplay.style.color = "#14A44D";
-            resultDisplay.innerHTML = "YOU WIN!";
+            resultDisplay.classList = "fa-solid fa-trophy";
             break;
         case "paperscissors":
         case "scissorsrock":
         case "rockpaper":
             computerScore++;
             resultDisplay.style.color = "#DC4C64";
-            resultDisplay.innerHTML = "YOU LOSE!";
+            resultDisplay.classList = "fa-solid fa-face-sad-cry";
             break;
         case "paperpaper":
         case "scissorsscissors":
         case "rockrock":
             resultDisplay.style.color = "#E4A11B";
-            resultDisplay.innerHTML = "ITS A DRAW!";
+            resultDisplay.classList = "fa-solid fa-handshake";
             break;
     }
 }

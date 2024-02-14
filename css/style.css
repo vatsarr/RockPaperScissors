@@ -77,10 +77,18 @@ button:active {
     scale: 0.97;
     color: #9fa6b2;
 }
+button:focus {
+    color: #2f3134;
+}
 
 .result-container {
-    margin: 2rem;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.result-container i {
     font-size: 3rem;
+    padding: 1rem;
 }
 
 .footer {
@@ -95,17 +103,15 @@ button:active {
         width: 100%;
     }
 
-    .button {
-        font-size: 5rem;
+    .greeting-container {
+        font-size: 0.5rem;
     }
-}
 
-@media (max-width: 390px) {
     .button {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .result-container {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
