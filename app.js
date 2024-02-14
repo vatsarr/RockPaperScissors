@@ -6,6 +6,9 @@ const userPlayScissors = document.getElementById("scissors");
 const resultDisplay = document.getElementById("result-display");
 const score = document.getElementById("score");
 
+const footer = document.getElementById("footer");
+footer.innerHTML = `Risto Vatsar &#169; ${new Date().getFullYear()}`;
+
 const playerButtons = document.querySelectorAll("#rock, #paper, #scissors");
 
 let computerChoice;
@@ -17,6 +20,15 @@ let computerScore = 0;
 function playGame() {
     playerButtons.forEach(function (button) {
         button.addEventListener("click", function () {
+            // do something when the button is clicked
+
+            userChoice = button.id;
+            getComputerPlay();
+            getResult();
+            displayScore();
+        });
+
+        button.addEventListener("touch", function () {
             // do something when the button is clicked
 
             navigator.vibrate([500]);
