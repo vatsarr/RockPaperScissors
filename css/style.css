@@ -67,12 +67,12 @@ button i {
     color: var(--font-color);
 }
 
-button i:hover {
+button:hover {
     cursor: pointer;
     scale: 1.05;
 }
 
-button i:active {
+button:active {
     scale: 0.97;
     color: #9fa6b2;
 }
@@ -89,4 +89,24 @@ button i:active {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .button {
+        font-size: 3rem;
+    }
+
+    .result-container {
+        font-size: 1.5rem;
+    }
 }
