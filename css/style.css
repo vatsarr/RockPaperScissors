@@ -55,19 +55,24 @@ body {
     background: none;
     margin: 0.5rem;
     display: inline;
-}
-
-.button i {
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.button i:hover {
-    cursor: pointer;
-    scale: 1.03;
+button {
+    border: none;
 }
 
-.button i:active {
+button i {
+    color: var(--font-color);
+}
+
+button i:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+button i:active {
     scale: 0.97;
     color: #9fa6b2;
 }
