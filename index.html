@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/0a3c570570.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Rock-Paper-Scissors</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-container">
+                <h1 class="greeting">Rock &#8277; Paper &#8277; Scissors</h1>
+            </div>
+            <div class="game-container">
+                <ul class="computer-choice">
+                    <li id="computer-message" class="computer-user"></li>
+                    <li class="button">
+                        <i id="computer-play" class="fa-solid fa-question"></i>
+                    </li>
+                </ul>
+                <ul class="player-buttons">
+                    <li class="computer-user">Make your choice</li>
+                    <li class="button">
+                        <i id="rock" class="fa-solid fa-hand-back-fist"></i>
+                    </li>
+                    <li class="button">
+                        <i id="paper" class="fa-solid fa-hand"></i>
+                    </li>
+                    <li class="button">
+                        <i id="scissors" class="fa-solid fa-hand-scissors"></i>
+                    </li>
+                </ul>
+                <div class="result-container">
+                    <h2 id="result-display"></h2>
+                    <div id="score"></div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
