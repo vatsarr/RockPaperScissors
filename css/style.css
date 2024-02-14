@@ -38,9 +38,10 @@ body {
     margin: auto;
 }
 
-.computer-user {
+.make-choice {
     width: 300px;
-    margin: 2rem auto;
+    margin: 1rem auto;
+    margin-top: 4rem;
 }
 
 .computer-choice {
@@ -56,7 +57,7 @@ body {
     background: none;
     margin: 0.5rem;
     display: inline;
-    padding: 1rem;
+    padding: 1rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -108,10 +109,10 @@ button:focus {
     }
 
     .button {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .result-container {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
